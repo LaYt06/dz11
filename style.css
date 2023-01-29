@@ -271,12 +271,15 @@ body {
     margin-left: -140px;
     position: absolute;
     z-index: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     /* background-image: url(nike.png); */
 }
-
 .nike__image{
+    animation-iteration-count: infinite;
     margin-top: 60px;
-  /*   border: 1px solid rgb(17, 188, 114);/*  */ 
+    
+    /*   border: 1px solid rgb(17, 188, 114);/*  sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss*/ 
     
 }
 .card-4__footer {
@@ -442,4 +445,15 @@ body {
 .buy__button:hover{
     cursor: pointer;
     background-color: #8cf9a4;
+}
+
+.card-4:hover .nike__image{
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+@keyframes example {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(10deg);}
+    100% {transform: rotate(0deg);}
 }

@@ -36,7 +36,6 @@ body {
     background-position-y: -40px;
     border-radius: 20px;
     border: 3px solid rgb(240, 0, 0);
-    
 }
 
 .card-cont-1 {
@@ -426,7 +425,11 @@ body {
     background-color: #f6ff00;
     box-shadow: 0 0 8px #f6ff00;
     border-radius: 50%;
-}
+/*     
+    animation-duration: 10s;
+    animation-iteration-count: infinite;     */
+} 
+
 .buy__button {
     display: flex;
     justify-content: center;
@@ -441,12 +444,17 @@ body {
     box-shadow: 0 0 8px #7fff9b;
     border-radius: 10px;
     font-family: Optima, sans-serif;
+    animation-iteration-count: infinite;
 }
 .buy__button:hover{
     cursor: pointer;
-    background-color: #8cf9a4;
+    /* background-color: #8cf9a4; */
+    animation-name: chobla;
+    animation-duration: 20s;    
 }
-
+.usd{
+    font-weight: 200px;
+}
 .card-4:hover .nike__image{
     animation-name: example;
     animation-duration: 2s;
@@ -456,4 +464,118 @@ body {
     0% {transform: rotate(0deg);}
     50% {transform: rotate(10deg);}
     100% {transform: rotate(0deg);}
+}
+
+.card-6 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-top: 80px;
+    width: 350px;
+    border-radius: 20px;
+}
+.card-6__profil {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: -60px;
+    position: absolute;
+    width: 330px;
+    height: 250px;
+    background: linear-gradient(rgb(64, 232, 153), rgb(131, 233, 185) );
+    border-radius: 20px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.card-6__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7a7a7a;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 50px;
+}
+.card-6__name {
+    font-weight: 600;
+    font-size: 35px;
+}
+.card-6__devloper {
+    opacity: 0.8;
+    font-size: 15px;
+}
+.card-6__information {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    bottom: 100px;
+    /* border: 1px solid #000; */
+    width: 330px;
+    height: 170px;
+}
+.card-6__info {
+    display: flex;
+    align-items: center;
+    color: rgb(118, 201, 162);
+}
+.card-6__info i{
+    margin-right: 15px;
+    font-size: 40px;
+}
+.card-6__info-phone {
+    display: flex;
+    align-items: center;
+    color: rgb(118, 201, 162);
+}
+.card-6__info-phone i{
+    margin-right: 25px;
+    font-size: 40px;
+}
+
+.card-6__info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.main-info {
+    cursor: pointer;
+    font-family: Times, Times New Roman, serif;
+    font-size: 25px;
+}
+.main-info:hover{
+    text-decoration: underline;
+}
+.side-info {
+    font-weight: 100;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+.card-6__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: -25px;
+    position: absolute;
+    width: 330px;
+    height: 90px;
+    border-radius: 20px;
+    background: linear-gradient(rgb(64, 232, 153), rgb(131, 233, 185) );
+}
+
+.card-6__footer i{
+    color: rgb(244, 244, 244);
+    font-size: 30px;
+}
+
+.card-6__footer i:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
 }

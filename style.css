@@ -484,11 +484,16 @@ body {
     position: absolute;
     width: 330px;
     height: 250px;
-    background: linear-gradient(rgb(64, 232, 153), rgb(131, 233, 185) );
+    /* background: linear-gradient(rgb(64, 232, 153), rgb(131, 233, 185) ); */
+    background-color: #74d388;
     border-radius: 20px;
     color: #fff;
     font-family: Arial, sans-serif;
+    animation-name: color-gradient;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
 }
+
 .card-6__avatar {
     display: flex;
     justify-content: center;
@@ -521,7 +526,10 @@ body {
 .card-6__info {
     display: flex;
     align-items: center;
-    color: rgb(118, 201, 162);
+    color: #74d389c8;
+    animation-name: color-gradient__text;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
 }
 .card-6__info i{
     margin-right: 15px;
@@ -530,7 +538,10 @@ body {
 .card-6__info-phone {
     display: flex;
     align-items: center;
-    color: rgb(118, 201, 162);
+    color: #74d389c8;
+    animation-name: color-gradient__text;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
 }
 .card-6__info-phone i{
     margin-right: 25px;
@@ -566,7 +577,11 @@ body {
     width: 330px;
     height: 90px;
     border-radius: 20px;
-    background: linear-gradient(rgb(64, 232, 153), rgb(131, 233, 185) );
+    /* background: linear-gradient(rgb(64, 232, 153), rgb(131, 233, 185) ); */
+    background-color: #74d388;
+    animation-name: color-gradient;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
 }
 
 .card-6__footer i{
@@ -580,5 +595,30 @@ body {
     font-size: 30px;
 }
 
+@keyframes color-gradient {
+    0% {background-color: #74d388;}
+    10% {background-color: #74bdd3;}
+    20% {background-color: #8174d3;}
+    30% {background-color: #7a74d3;}
+    40% {background-color: #c374d3;}
+    50% {background-color: #d374c6;}
+    60% {background-color: #d37487;}
+    70% {background-color: #d38f74;}
+    80% {background-color: #d3c874;}
+    90% {background-color: #b8d374;}
+    100% {background-color: #74d388;}
+}
 
-
+@keyframes color-gradient__text {
+    0% {color: #539e62;}
+    10% {color: #5798ab;}
+    20% {color: #6256ac;}
+    30% {color: #615ca8;}
+    40% {color: #91539f;}
+    50% {color: #a3529a;}
+    60% {color: #a84b5e;}
+    70% {color: #9a624e;}
+    80% {color: #a59b4e;}
+    90% {color: #90aa4e;}
+    100% {color: #539e62;}
+}
